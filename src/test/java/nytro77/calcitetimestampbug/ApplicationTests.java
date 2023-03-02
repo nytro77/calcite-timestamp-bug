@@ -59,7 +59,7 @@ class ApplicationTests {
 			assertEquals(101, result.size());
 			assertEquals("1900-01-01 00:00:00", result.get(0));
 			assertEquals("1900-01-01 00:00:00", result.get(99));
-			assertEquals("1900-01-01 00:00:00", result.get(100)); // Bug will cause this to be 1899-12-31 23:00:00
+			assertEquals("1900-01-01 00:00:00", result.get(100), "Timestamp 101 is incorrect!"); // Bug will cause this to be 1899-12-31 23:00:00
 		}
 	}
 }
